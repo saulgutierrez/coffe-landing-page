@@ -308,12 +308,11 @@ header .navbar li a:hover {
     }
 
     .contenido .imgBox {
-        width: 450px;
+        width: 100%;
     }
 
     .contenido .imgBox img {
-        width: 350px;
-        padding-right: 50px;
+        width: 100%;
         margin-top: 0;
     }
 
