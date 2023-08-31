@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
     <title>Coffe Landing Page</title>
 </head>
 <body>
@@ -14,11 +15,12 @@
         <div class="circulo"></div>
         <header>
             <a href="#" class="logo">Coffe</a>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
             <ul class="navbar">
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Nuestros productos</a></li>
-                <li><a href="#">Ubicación</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="toggleMenu()">Acerca de</a></li>
+                <li><a href="#" onclick="toggleMenu()">Nuestros productos</a></li>
+                <li><a href="#" onclick="toggleMenu()">Ubicación</a></li>
+                <li><a href="#" onclick="toggleMenu()">Contacto</a></li>
             </ul>
         </header>
 

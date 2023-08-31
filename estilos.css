@@ -189,3 +189,159 @@ header .navbar li a:hover {
 .redesSociales li a:hover {
     color: #7a551c;
 }
+
+/* Breakpoints */
+
+/* -- Pantallas Largas -- */
+@media only screen and (max-width: 1200px) {
+    .contenido .tituloBox h2 {
+        font-size: 3.5em;
+    }
+
+    .copyright {
+        left: 500px;
+    }
+}
+
+/* -- Laptops -- */
+@media only screen and (max-width: 992px) {
+    section {
+        padding: 80px;
+    }
+
+    header {
+        padding: 40px 80px;
+    }
+
+    .contenido .tituloBox h2 {
+        font-size: 3em;
+    }
+
+    .contenido .tituloBox a {
+        margin-left: 0px;
+    }
+
+    .contenido .imgBox {
+        width: 400px;
+    }
+
+    .contenido .imgBox img {
+        width: 400px;
+    }
+
+    .circulo {
+        clip-path: circle(550px at right 750px);
+    }
+
+    .copyright {
+        left: 400px;
+    }
+}
+
+/* -- Tablets -- */
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 40px;
+    }
+
+    header {
+        padding: 30px 40px;
+    }
+
+    header .navbar {
+        display: none;
+    }
+
+    header .navbar.active {
+        width: 100%;
+        height: calc(100% - 40px);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #bba694;
+        z-index: 1;
+    }
+
+    header .navbar li a {
+        font-size: 1.2em;
+        line-height: 2;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .menuToggle.active {
+        background: url('close.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .contenido {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .contenido .tituloBox {
+        text-align: center;
+    }
+
+    .contenido .tituloBox h2 {
+        font-size: 2em;
+    }
+
+    .contenido .tituloBox p {
+        font-size: 1.5em;
+    }
+
+    .contenido .imgBox {
+        width: 450px;
+    }
+
+    .contenido .imgBox img {
+        width: 350px;
+        padding-right: 50px;
+        margin-top: 0;
+    }
+
+    .circulo {
+        clip-path: circle(400px at center bottom);
+    }
+
+    .copyright {
+        left: 0px;
+    }
+}
+
+/* -- Celulares -- */
+@media only screen and (max-width: 400px) {
+    section {
+        padding: 30px;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    .contenido {
+        padding-left: 0px;
+    }
+
+    .redesSociales {
+        right: 35%;
+        padding: 0px;
+    }
+}
