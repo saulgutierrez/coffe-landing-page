@@ -89,7 +89,8 @@ header .navbar li a:hover {
     line-height: 1.2;
 }
 
-.contenido .tituloBox h2 span {
+.contenido .tituloBox h2 span,
+.contenido .tituloBox p span {
     background: #9b7239;
     color: #ffffd5;
     padding: 0 10px;
@@ -135,6 +136,19 @@ header .navbar li a:hover {
     width: 480px;   
 }
 
+.contenido-acerca-de .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+}
+
+.contenido-acerca-de .imgBox img {
+    width: 480px;
+    border-bottom-left-radius: 100px;
+}
+
 /* Circulo */
 
 .circulo {
@@ -143,6 +157,17 @@ header .navbar li a:hover {
     left: 0;
     background: #9b7239;
     clip-path: circle(650px at right 750px);
+    width: 100%;
+    height: 100%;
+
+}
+
+.circulo-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9b7239;
+    clip-path: circle(650px at left 1050px);
     width: 100%;
     height: 100%;
 
@@ -323,6 +348,24 @@ header .navbar li a:hover {
     .copyright {
         left: 0px;
     }
+
+    .contenido-acerca-de {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .contenido-acerca-de .imgBox {
+        padding-right: 0px;
+    }
+
+    .circulo-acerca-de {
+        clip-path: circle(400px at center top);
+    }
+
+    .contenido-acerca-de .imgBox img {
+        border-bottom-right-radius: 100px;
+    }
 }
 
 /* -- Celulares -- */
@@ -340,7 +383,8 @@ header .navbar li a:hover {
     }
 
     .redesSociales {
-        right: 35%;
-        padding: 0px;
+        left: 0px;
+        padding-bottom: 0px;
     }
+
 }
