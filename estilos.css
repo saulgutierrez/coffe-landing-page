@@ -633,27 +633,6 @@ header .navbar li a:hover {
     }
 }
 
-/** -- Large phones -- **/
-@media only screen and (max-width: 600px) {
-    .circulo-back {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #9b7239;
-        clip-path: circle(90px at left 900px);
-        width: 100%;
-        height: 100%;
-    }
-
-    .redes-acerca-de {
-        top: 1230px;
-    }
-
-    .copyright-acerca-de {
-        top: 1200px;
-    }
-}
-
 /* -- Celulares -- */
 @media only screen and (max-width: 400px) {
     section {
@@ -666,11 +645,6 @@ header .navbar li a:hover {
 
     .contenido {
         padding-left: 0px;
-    }
-
-    .redesSociales {
-        right: 35%;
-        padding: 0px;
     }
 
     .contenido-acerca-de .imgBox {
@@ -723,11 +697,7 @@ header .navbar li a:hover {
         height: 100%;
     }
 
-    .redes-acerca-de {
-        top: 1230px;
-    }
-
-    .copyright-acerca-de {
-        top: 1200px;
+    .copyright-none {
+        display: none;
     }
 }
