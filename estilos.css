@@ -570,6 +570,9 @@ header .navbar li a:hover {
     .copyright {
         left: 0px;
     }
+    .redesSociales {
+        left: 0px;
+    }
 
     .contenido-acerca-de {
         margin-top: 100px;
