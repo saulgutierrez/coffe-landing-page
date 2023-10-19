@@ -633,6 +633,27 @@ header .navbar li a:hover {
     }
 }
 
+/** -- Large phones -- **/
+@media only screen and (max-width: 600px) {
+    .copyright {
+        top: 1200px;
+    }
+
+    .redesSociales {
+        left: 0px;
+        top: 1230px;
+    }
+    .circulo-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #9b7239;
+        clip-path: circle(90px at left 900px);
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* -- Celulares -- */
 @media only screen and (max-width: 400px) {
     section {
@@ -647,9 +668,13 @@ header .navbar li a:hover {
         padding-left: 0px;
     }
 
+    .copyright {
+        top: 1200px;
+    }
+
     .redesSociales {
         left: 0px;
-        padding-bottom: 0px;
+        top: 1230px;
     }
 
     .contenido-acerca-de .imgBox {
@@ -688,6 +713,16 @@ header .navbar li a:hover {
         left: 0;
         background: #9b7239;
         clip-path: circle(100px at right 0px);
+        width: 100%;
+        height: 100%;
+    }
+
+    .circulo-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #9b7239;
+        clip-path: circle(90px at left 900px);
         width: 100%;
         height: 100%;
     }
