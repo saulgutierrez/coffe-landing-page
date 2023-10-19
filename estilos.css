@@ -336,6 +336,103 @@ header .navbar li a:hover {
     font-weight: 500;
 }
 
+/* Seccion Contacto */
+.contacto {
+    padding: 100px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.contacto .contenido h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #9b7239;
+}
+
+.contacto .contenido p {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #9b7239;
+}
+
+.contacto .formulario {
+    position: relative;
+    width: 450px;
+    border: 5px solid #9b7239;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.contacto .formulario form .inputBox input[type="text"],
+.contacto .formulario form .inputBox input[type="email"],
+.contacto .formulario form .inputBox textarea {
+    border: 5px solid #9b7239;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background: #bba694;
+    font-size: 1em;
+    resize: none;
+}
+
+.contacto .formulario form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+.contacto .formulario form input::placeholder,
+.contacto .formulario form textarea::placeholder {
+    color: #9b7239;
+}
+
+.contacto .formulario form .inputBox input[type="text"]:focus,
+.contacto .formulario form .inputBox input[type="email"]:focus,
+.contacto .formulario form .inputBox textarea:focus {
+    outline: none;
+}
+
+.contacto .contenido {
+    display: inline;
+    max-width: 500px;
+    text-align: left;
+    line-height: 2;
+}
+
+.circulo-contacto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9b7239;
+    clip-path: circle(100px at left 250px);
+    width: 100%;
+    height: 100%;
+}
+
+.boton {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffd5;
+    background: #7a551c;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    color: #7a551c;
+    background: #ffffd5;
+}
+
 /* Breakpoints */
 
 /* -- Pantallas Largas -- */
@@ -346,6 +443,10 @@ header .navbar li a:hover {
 
     .copyright {
         left: 500px;
+    }
+
+    .contacto {
+        padding-bottom: 0px;
     }
 }
 
@@ -491,6 +592,45 @@ header .navbar li a:hover {
     .tienda .titulo {
         padding: 30px 0px;
     }
+
+    /* Seccion Contacto */
+    .contacto {
+        flex-direction: column-reverse;
+    }
+
+    .contacto .contenido {
+        text-align: center;
+    }
+
+    .contacto .formulario {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .contacto .formulario form .inputBox input[type="text"],
+    .contacto .formulario form .inputBox input[type="email"],
+    .contacto .formulario form .inputBox textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 1em;
+        resize: none;
+    }
+
+    .circulo-contacto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #9b7239;
+        clip-path: circle(100px at right 0px);
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* -- Celulares -- */
@@ -522,5 +662,33 @@ header .navbar li a:hover {
 
     .tienda {
         margin-top: 25px;
+    }
+
+    .contacto {
+        width: 100%;
+    }
+
+    .contacto .formulario {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contacto .contenido {
+        width: 90%;
+    }
+
+    .contacto .contenido .parrafo{
+        text-align: justify;
+        width: 90%;
+    }
+
+    .circulo-contacto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #9b7239;
+        clip-path: circle(100px at right 0px);
+        width: 100%;
+        height: 100%;
     }
 }
