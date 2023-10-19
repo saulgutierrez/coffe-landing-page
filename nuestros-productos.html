@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+    <title>Coffe Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="index.html" class="logo">Coffe</a>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
+            <ul class="navbar">
+                <li><a href="acerca-de.html" onclick="toggleMenu()">Acerca de</a></li>
+                <li><a href="nuestros-productos.html" onclick="toggleMenu()">Nuestros productos</a></li>
+                <li><a href="#" onclick="toggleMenu()">Ubicación</a></li>
+                <li><a href="#" onclick="toggleMenu()">Contacto</a></li>
+                <li><a href="#" onclick="toggleMenu()">Recetas</a></li>
+                <li><a href="#" onclick="toggleMenu()">Blog</a></li>
+            </ul>
+        </header>
+
+        <section class="tienda" id="tienda">
+            <h2 class="titulo">Nuestros productos</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/cafe.jpg" alt="">
+                        <span class="tag discount">Descuento</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Café</h3>
+                        <div class="precio">
+                            <p class="precio-discount">$25.00</p>
+                            <p class="precio-real">$15.00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/capuccino.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Capuccino</h3>
+                        <div class="precio">
+                            <p class="precio-real">$24.00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/desayuno.jpg" alt="">
+                        <span class="tag discount">Descuento</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Desayuno</h3>
+                        <div class="precio">
+                            <p class="precio-discount">$27.00</p>
+                            <p class="precio-real">$18.99</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/hamburger.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hamburguesa sencilla</h3>
+                        <div class="precio">
+                            <p class="precio-real">$29.00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/choco-cake.jpg" alt="">
+                        <span class="tag discount">Descuento</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco cake</h3>
+                        <div class="precio">
+                            <p class="precio-discount">$19.95</p>
+                            <p class="precio-real">$11.99</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/chocolate.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Chocolate</h3>
+                        <div class="precio">
+                            <p class="precio-real">$24.00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/te-matcha.jpg" alt="">
+                        <span class="tag unavailable">Agotado</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Té matcha</h3>
+                        <div class="precio">
+                            <p class="precio-real">$29.00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="productos/bar-choco.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Chocolate macizo</h3>
+                        <div class="precio">
+                            <p class="precio-real">$13.00</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>&copy; CoffeLand 2022</p>
+        </div>
+        <div class="redesSociales">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </div>
+    </section>
+</body>
+</html>
