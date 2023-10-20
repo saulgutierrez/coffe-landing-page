@@ -732,7 +732,8 @@ header .navbar li a:hover {
     }
 
     .wrapper .tituloBox h2 {
-        text-align: center;
+        text-align: left;
+        font-size: 0.9em;
     }
 
     .wrapper {
