@@ -455,7 +455,7 @@ header .navbar li a:hover {
 .recetas .tituloBox {
     position: relative;
     width: 80%;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .recetas .tituloBox h2 {
@@ -476,7 +476,6 @@ header .navbar li a:hover {
 
 .recetas .tituloBox p {
     font-size: 1.8em;
-    line-height: 1.5;
     color: #7a551c;
     font-family: 'Lora', serif;
     font-weight: 600;
