@@ -444,7 +444,7 @@ header .navbar li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 80px;
     cursor: pointer;
 }
 
@@ -510,6 +510,11 @@ header .navbar li a:hover {
     width: 150px;   
 }
 
+.recetas .tituloBox h2 {
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+
 .recetas .tituloBox .wrapper-iconos {
     display: flex;
 }
@@ -520,6 +525,15 @@ header .navbar li a:hover {
     color: #7a551c;
     position: relative;
     width: 80%;
+}
+
+.recetas .tituloBox .wrapper-iconos .info {
+    color: #7a551c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 
@@ -731,6 +745,7 @@ header .navbar li a:hover {
         position: relative;
         width: 250px;
         height: 250px;
+        padding: 0;
     }
 
     .wrapper {
@@ -758,6 +773,11 @@ header .navbar li a:hover {
         height: 100%;
         object-fit: cover;
         filter: brightness(20%);
+    }
+
+    .recetas .tituloBox .wrapper-iconos .info {
+        line-height: 1.1;
+        align-items: flex-start;
     }
 }
 
