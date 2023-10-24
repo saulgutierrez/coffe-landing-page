@@ -570,6 +570,200 @@ header .navbar li a:hover {
     color: #9b7239;
 }
 
+/* Seccion Blog */
+a {
+    text-decoration: none;
+}
+
+.content-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.8;
+}
+
+.content-blog .tituloArticuloBlog {
+    position: relative;
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #9b7239;
+    text-transform: uppercase;
+}
+
+.content-blog .tituloArticuloBlog span {
+    color: #ffffd5;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #9b7239;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+.content-blog .entrada {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #9b7239;
+}
+
+.content-blog .content-data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.content-blog .content-data .fecha {
+    position: relative;
+    width: 15%;
+    color: #7a551c;
+}
+
+.content-blog .content-data .autor {
+    color: #7a551c;
+}
+
+.content-blog .top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-blog .top .imgBox {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-blog .top .imgBox img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-blog .top .list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    background-color: #7a551c;
+    border-radius: 10px;
+    width: 30%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content-blog .top .list ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.content-blog .top .list ul li {
+    position: relative;
+    width: 90%;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.content-blog .top .list ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content-blog .top .list ul hr {
+    width: 90%;
+    height: 2px; 
+}
+
+.content-blog .top .list .titulo-aside {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.article-content p {
+    width: 70%;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #9b7239;
+}
+
+.article-content h1 {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #9b7239;
+}
+
+.article-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.4em;
+    color: #9b7239;
+    font-weight: bold;
+}
+
+.article-content .imgBox {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-blog .imgBox img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.article-content .wrapper-cards {
+    width: min-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article-content .wrapper-cards .content-cards {
+    font-size: 0.5em;
+}
+
+.article-content .wrapper-cards .content-cards .imgBox {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.article-content .wrapper-cards .content-cards .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.article-content .wrapper-cards .content-cards .card-info .titulo {
+    color: #fff;
+    width: 250px;
+    margin-bottom: 0px;
+}
+
+.article-content .wrapper-cards .content-cards .card-info .datos {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 
 /* Breakpoints */
 
@@ -820,6 +1014,11 @@ header .navbar li a:hover {
     .ubicacion {
         flex-direction: column-reverse;
         gap: 20px;
+    }
+
+    /* Seccion Blog */
+    .content-blog .content-data .fecha {
+        width: 50%;
     }
 }
 
